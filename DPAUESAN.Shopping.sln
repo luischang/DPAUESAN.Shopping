@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPAUESAN.Shopping.API", "DPAUESAN.Shopping.API\DPAUESAN.Shopping.API.csproj", "{2D1E48F2-DFE5-4601-A8F7-EE89344517C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPAUESAN.Shopping.DOMAIN", "DPAUESAN.Shopping.DOMAIN\DPAUESAN.Shopping.DOMAIN.csproj", "{0FB2DC82-86C8-4E86-BC19-51FECA34EDF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D1E48F2-DFE5-4601-A8F7-EE89344517C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1E48F2-DFE5-4601-A8F7-EE89344517C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1E48F2-DFE5-4601-A8F7-EE89344517C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1E48F2-DFE5-4601-A8F7-EE89344517C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB2DC82-86C8-4E86-BC19-51FECA34EDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB2DC82-86C8-4E86-BC19-51FECA34EDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB2DC82-86C8-4E86-BC19-51FECA34EDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB2DC82-86C8-4E86-BC19-51FECA34EDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C23AD1A-A619-41B7-93F0-6640AC9B246B}
+	EndGlobalSection
+EndGlobal
