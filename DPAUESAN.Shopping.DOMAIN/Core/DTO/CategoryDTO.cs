@@ -24,4 +24,9 @@ namespace DPAUESAN.Shopping.DOMAIN.Core.DTO
         public string? Description { get; set; }
         public bool? IsActive { get; set; }
     }
+
+    public class CategoryOnlyDescriptionDTO
+    {
+        public string? Description { get; set; }
+    }
 }

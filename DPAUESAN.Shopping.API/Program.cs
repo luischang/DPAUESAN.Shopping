@@ -5,6 +5,7 @@ using DPAUESAN.Shopping.DOMAIN.Infrastructure.Repositories;
 using DPAUESAN.Shopping.DOMAIN.Infrastructure.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,9 +27,16 @@ builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.AddTransient<IJWTFactory, JWTFactory>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<ICategoryService, CategoryService>();
+builder.Services.AddTransient<IFavoriteRepository, FavoriteRepository>();
 builder.Services.AddSharedInfrastructure(_config);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options
+        .JsonSerializerOptions
+        .ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
