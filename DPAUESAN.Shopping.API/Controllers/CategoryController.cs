@@ -1,5 +1,6 @@
 ﻿using DPAUESAN.Shopping.DOMAIN.Core.Entities;
 using DPAUESAN.Shopping.DOMAIN.Core.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace DPAUESAN.Shopping.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         //private readonly ICategoryRepository _categoryRepository;
